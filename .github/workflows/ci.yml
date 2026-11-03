@@ -1,0 +1,28 @@
+# Runs the interaction and accessibility tests on every push and pull request.
+# Deployment is handled separately by Cloudflare's Git integration (see README).
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Lint, type-check, build and test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: oven-sh/setup-bun@v2
+
+      - run: bun install --frozen-lockfile
+      - run: bunx playwright install --with-deps chromium
+
+      # Biome, TypeScript and the Storybook build
+      - run: bun run build
+      # Every story: play function, then axe
+      - run: bun run test
