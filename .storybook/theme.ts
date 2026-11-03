@@ -5,7 +5,7 @@ export const theme = create({
   base: 'dark',
 
   brandTitle: 'Sam Nicholls · Components',
-  brandUrl: 'https://samnicholls.me',
+  brandUrl: 'https://samnicholls.dev',
   brandTarget: '_self',
 
   colorPrimary: '#ff7a45',

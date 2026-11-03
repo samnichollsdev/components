@@ -45,7 +45,7 @@ Automated tests catch a lot, but not everything (axe can't tell whether an annou
 
 ## Design
 
-- **Monochrome with a single accent colour**, matching [samnicholls.me](https://samnicholls.me). The accent is one CSS variable (`--color-accent` in `src/index.css`), so every component can be re-themed by changing one line.
+- **Monochrome with a single accent colour**, matching [samnicholls.dev](https://samnicholls.dev). The accent is one CSS variable (`--color-accent` in `src/index.css`), so every component can be re-themed by changing one line.
 - **Contrast checked.** Text reaches 4.5:1, and input borders and other component boundaries reach 3:1.
 - **Short, one-off motion only**, turned off for anyone who prefers reduced motion.
 
@@ -92,7 +92,7 @@ src/
 
 ## Deployment
 
-The Storybook is hosted on Cloudflare Workers as static assets at **[components.samnicholls.me](https://components.samnicholls.me)** (configured in `wrangler.jsonc`). Cloudflare's GitHub integration **builds and deploys automatically on every push to `main`**.
+The Storybook is hosted on Cloudflare Workers as static assets at **[components.samnicholls.dev](https://components.samnicholls.dev)** (configured in `wrangler.jsonc`). Cloudflare's GitHub integration **builds and deploys automatically on every push to `main`**.
 
 The build runs Biome and TypeScript first, so code with lint, formatting or type errors fails the build and never reaches production.
 
@@ -104,6 +104,6 @@ Conventions for components, TypeScript, styling, accessibility and testing are d
 
 ## Contact
 
-- **Website:** [samnicholls.me](https://samnicholls.me)
-- **Email:** [contact@samnicholls.me](mailto:contact@samnicholls.me)
+- **Website:** [samnicholls.dev](https://samnicholls.dev)
+- **Email:** [contact@samnicholls.email](mailto:contact@samnicholls.email)
 - **LinkedIn:** [Sam Nicholls](https://uk.linkedin.com/in/samuel-nicholls-576253133)

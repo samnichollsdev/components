@@ -1,6 +1,6 @@
 # Coding Standards
 
-Conventions for this project. They match my [portfolio](https://github.com/samnichollsme/portfolio), with additions for building and testing reusable components. When in doubt, match the surrounding code: consistency matters more than any individual rule.
+Conventions for this project. They match my [portfolio](https://github.com/samnichollsdev/portfolio), with additions for building and testing reusable components. When in doubt, match the surrounding code: consistency matters more than any individual rule.
 
 ## Components
 

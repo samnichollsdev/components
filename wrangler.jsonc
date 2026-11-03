@@ -5,5 +5,5 @@
   "assets": {
     "directory": "./dist"
   },
-  "routes": [{ "pattern": "components.samnicholls.me", "custom_domain": true }]
+  "routes": [{ "pattern": "components.samnicholls.dev", "zone_name": "samnicholls.dev", "custom_domain": true }]
 }
